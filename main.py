@@ -4,8 +4,8 @@ import smtplib
 
 app=Flask(__name__)
 
-email = "cybercelldelhigov8@gmail.com"
-password = "brucewayne1997"
+email = 'your email is required here'             #you have to enter your email details .
+password = "your password is required here"      #you have to enter your password .
 
 
 
@@ -36,7 +36,7 @@ def blogger(value):
 @app.route('/contact.html',methods=['POST'])
 def receive_data():
     data = request.form
-    # print(data["your_name"])
+    # print(data["your_name"])                                              #smtplib — SMTP protocol client used here for sending the email messages
     # print(data["your_email"])
     # print(data["your_phone_number"])
     # print(data["your_email"])
@@ -50,7 +50,7 @@ def receive_data():
         # with smtplib.SMTP("smtp.gmail.com") as connection:
         #     connection.starttls()
         #     connection.login(user=email, password=password)
-        #     connection.sendmail(email, "burnt1997@gmail.com",zing)
+        #     connection.sendmail(email, "burnt1997@gmail.com",zing)    #here you have to mention the email adress of the person that you want to send the message
         #
         #     connection.close()
 
